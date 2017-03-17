@@ -1,4 +1,4 @@
-<script type="text/x-red" data-template-name="UPM-Grove-Relay">
+<script type="text/x-red" data-template-name="UPM-Grove-Speaker">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
@@ -36,22 +36,24 @@
     </div>    
 </script>
 
-<script type="text/x-red" data-help-name="UPM-Grove-Relay">
-    <h2>Grove Relay</h2>
+<script type="text/x-red" data-help-name="UPM-Grove-Speaker">
+    <h2>Grove Speaker</h2>
     <br>
-    <p>This node will toggle the Grove Relay based on the msg.payload input (1 or 0).</p>
+    <p>This node will toggle the Grove Speaker based on the msg.payload input (1 or 0).</p>
     <br>
     <p>Learn More:
-        <a href="https://software.intel.com/en-us/iot/hardware/sensors/grove-relay" target="_blank">Grove Relay</a>
+        <a 
+href="https://software.intel.com/en-us/iot/hardware/sensors/grove-speaker" target="_blank">Grove Speaker</a>
     </p>
     <br>
-    <img src="https://raw.githubusercontent.com/intel-iot-devkit/upm/master/docs/images/groverelay.jpg" />
+    <img src="https://raw.githubusercontent.com/intel-iot-devkit/upm/master/docs/images/grovespeaker.jpg" 
+/>
 </script>
 
 
 <script type="text/javascript">
 
-    RED.nodes.registerType('UPM-Grove-Relay', {
+    RED.nodes.registerType('UPM-Grove-Speaker', {
         category: 'UPM Sensors',
         defaults: {
             name: {
@@ -72,13 +74,13 @@
             }
         },
         color: '#a6bbcf',
-        paletteLabel: 'relay',
+        paletteLabel: 'speaker',
         inputs: 1,
         outputs: 0,
         icon: 'debug.png',
         align: 'right',
         label: function(){
-            return this.name || 'Grove Relay';
+            return this.name || 'Grove Speaker';
         },
     });
 </script>
